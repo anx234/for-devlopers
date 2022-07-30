@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'css-wipe';
+
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+p {
+  margin: 15px 0;
+  line-height: 1.8;
+}
+
+.blog-text ul,
+ol {
+  font-size: 110%;
+  line-height: 2.3;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.blog-text pre {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  line-height: 2.3;
+
+  font-size: 14px;
+  line-height: 1.2;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.blog-text h1 {
+  font-size: 35px;
+}
+
+.blog-text h2,
+.blog-text h3,
+.blog-text h4 {
+  font-size: 27px;
+}
+
+/* Fix category colors in production */
+.bg-yellow-600 {
+  background-color: #d97705;
+}
+.bg-blue-600 {
+  background: #3929eb;
+}
+.bg-green-600 {
+  background-color: #049669;
+}
+.bg-purple-600 {
+  background-color: #7730db;
+}
+.bg-red-600 {
+  background-color: #a70b34;
+}
+
+
+/*---------------------------------
+  web html component
+---------------------------------*/
+
+.el_btn {
+  display: inline-block;
+  width: 300px;
+  max-width: 100%;
+  padding: 20px 10px;
+  background-color: #e25c00;
+  border: 2px solid transparent;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+  color: #fff;
+  font-size: 1.125rem;
+  text-align: center;
+  text-decoration: none;
+  transition: .25s;
+}
+
+.el_btn:focus,
+.el_btn:hover {
+  background-color: #fff;
+  border-color: currentColor;
+  color: #e25c00;
+}
+
+/*---------------------------------
+  block
+---------------------------------*/
+
+.bl_bulletList {
+  list-style: circle;
+}
+
+.bl_bulletList_item {
+  position: relative;
+  padding-left: 0.5em;
+  margin-left: 4px;
+  list-style: none;
+  &::before {
+    content: "";
+    height: 4px;
+    width: 4px;
+    background-color: #202020;
+
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+  }
+}

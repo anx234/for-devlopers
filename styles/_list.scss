@@ -1,0 +1,22 @@
+
+.bl_bulletList {
+  list-style: circle;
+}
+
+.bl_bulletList_item {
+  position: relative;
+  padding-left: 0.5em;
+  margin-left: 4px;
+  &::before {
+    content: "";
+    height: 4px;
+    width: 4px;
+    background-color: #202020;
+
+    border-radius: 50%;
+    position: absolute;
+    top: 0.75em;
+    right: 100%;
+    transform: translate(0%, 0);
+  }
+}
