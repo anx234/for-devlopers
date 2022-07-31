@@ -6,7 +6,7 @@ import Footer from './Footer'
 export default function Layout({ title, keywords, description, children }) {
   return (
     <div>
-          <div className='flex flex-col justify-between min-h-screen'>
+          <div className='flex flex-col justify-between min-h-screen bg-stone-50'>
       <Head>
         <title>{title}</title>
         <meta name='keywords' content={keywords} />
@@ -15,7 +15,8 @@ export default function Layout({ title, keywords, description, children }) {
       </Head>
 
       <Header />
-      <main className='container mx-auto my-7'>{children}</main>
+      <main className=''>
+        {children}</main>
       <Footer />
       </div>
     </div>

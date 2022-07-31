@@ -12,13 +12,13 @@ import hljs from 'highlight.js'
 import 'highlight.js/styles/vs2015.css';
 marked.setOptions({
   langPrefix: '',
-  highlight: function(code, lang) {
-      return hljs.highlightAuto(code, [lang]).value
+  highlight: function (code, lang) {
+    return hljs.highlightAuto(code, [lang]).value
   }
 })
 
 export default function PostPage({
-  frontmatter: { title, category, date, cover_image, author, author_image },
+  frontmatter: { title, category, date, tags, author, author_image },
   content,
   slug,
 }) {
@@ -29,8 +29,15 @@ export default function PostPage({
         <div className='flex justify-between items-center mt-4'>
           <h1 className='text-5xl mb-7'>{title}</h1>
           <CategoryLabel>{category}</CategoryLabel>
+          <div className="tags-article">
+            {tags && tags.length > 0 && tags.map(tag => {
+              return (
+                <button>{tag}</button>
+              )
+            })}
+          </div>
         </div>
-      
+
 
         <div className='flex justify-between items-center bg-gray-100 p-2 my-8'>
           <div className='mr-4'>{date}</div>

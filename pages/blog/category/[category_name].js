@@ -49,7 +49,8 @@ export async function getStaticPaths() {
 
   const paths = categories.map((category) => ({
     params: { category_name: category },
-  }))
+  })
+  )
 
   return {
     paths,

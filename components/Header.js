@@ -7,7 +7,7 @@ export default function Header() {
       <div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>
         <Link href='/'>
           <a className='flex md:w-1/5 title-font font-medium items-center md:justify-start mb-4 md:mb-0'>
-            <span className='ml-3 text-xl text-sky-500'>For Developer</span>
+            <span className='text-2xl text-emerald-500'>For Developers</span>
           </a>
         </Link>
         <nav className='flex flex-wrap md:w-4/5 items-center justify-end text-base md:ml-auto'>

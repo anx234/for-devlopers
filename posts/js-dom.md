@@ -4,7 +4,7 @@ date: 'May 4, 2021'
 excerpt: 'javascriptでの要素の取得方法'
 cover_image: '/images/posts/img1.jpg'
 category: 'JavaScript'
-tag: ['markdown', 'code', 'features']
+tags: ['code', 'features']
 author: 'John Doe'
 author_image: 'https://randomuser.me/api/portraits/men/11.jpg'
 ---

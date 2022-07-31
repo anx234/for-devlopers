@@ -5,8 +5,13 @@
 @tailwind utilities;
 @import 'css-wipe';
 
+html{}
+
 body{
   font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  letter-spacing: 0.05em;
 }
 
 p {
