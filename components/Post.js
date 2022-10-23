@@ -19,10 +19,10 @@ export default function Post({ post, compact }) {
           </a>
         </Link>
 
-        <div className="tags-article flex flex-wrap">
-            {post.frontmatter.tags && post.frontmatter.tags.length > 0 && post.frontmatter.tags.map(tag => {
+        <div className="tags-article flex flex-wrap mt-2">
+            {post.frontmatter.tags && post.frontmatter.tags.length > 0 && post.frontmatter.tags.map((tag, index) => {
               return (
-                <TagLabel>{tag}</TagLabel>
+                <TagLabel key={index}>{tag}</TagLabel>
               )
             })}
           </div>

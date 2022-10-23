@@ -23,7 +23,7 @@ export default function Search() {
   return (
     <div className='relative p-4'>
       <div className='container'>
-        <div className='relative text-gray-600 w-72'>
+        <div className='relative text-gray-600 w-72 max-w-full'>
           <form>
             <input
               type='search'

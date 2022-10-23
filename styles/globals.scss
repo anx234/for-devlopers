@@ -47,7 +47,8 @@ ol {
 .blog-text h2,
 .blog-text h3,
 .blog-text h4 {
-  font-size: 27px;
+  font-size: 1.8rem;
+  padding-top: 1em;
 }
 
 /* Fix category colors in production */
@@ -67,7 +68,12 @@ ol {
   background-color: #a70b34;
 }
 
-
+.logo{
+	font-weight:bold;
+	color: transparent;
+	background: repeating-linear-gradient( 90deg, #4169e1 0 35%, #da70d6 45% 55% ,#f08080 60% 100%);
+	-webkit-background-clip: text;
+}
 /*---------------------------------
   web html component
 ---------------------------------*/
@@ -119,4 +125,8 @@ ol {
     right: 100%;
     transform: translateY(-50%);
   }
+}
+
+.catgegorylabel{
+  display: inline-block;
 }
